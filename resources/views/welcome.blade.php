@@ -90,7 +90,7 @@
                             </div>
 
 
-                            <div class="row">
+                            <div class="row"  align="end">
                                 <div class="col-md-12 form-group">
                                     <button type="submit" class="btn btn-success w-25 hover-shadow">
                                         Salvar
