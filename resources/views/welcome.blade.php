@@ -39,7 +39,7 @@
                                         <option value="">Interação</option>
                                         <option value="">Feedback</option>
                                         <option value="">Incidente</option>
-                                        <option value="">treinamento</option>
+                                        <option value="">Treinamento</option>
                                         <option value="">Reunião</option>
 
                                     </select>
@@ -52,7 +52,7 @@
                                         <option value="">Interação</option>
                                         <option value="">Feedback</option>
                                         <option value="">Incidente</option>
-                                        <option value="">treinamento</option>
+                                        <option value="">Treinamento</option>
                                         <option value="">Reunião</option>
                                     </select>
                                 </div>
