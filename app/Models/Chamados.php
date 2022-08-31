@@ -10,12 +10,14 @@ class Chamados extends Model
     use HasFactory;
 
     protected $fillable = [
+
         'chamado',
         'indicador1',
         'indicador2',
         'data_abertura',
-        'data_encerramento',
+        'data_fechamento',
         'colaborador',
-        'bairro'
+        'bairro',
+        'obs'
     ];
 }

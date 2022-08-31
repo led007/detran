@@ -1,5 +1,8 @@
 <!-- Essential javascripts for application to work-->
+
 <script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="{{ asset('/vendor/sweetalert/sweetalert.all.js') }}" @include('sweetalert::alert')> 
+</script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/main.js"></script>
@@ -65,5 +68,29 @@
       	ga('send', 'pageview');
       }
     </script>
+
+	<script>
+		function deleta(url) {
+        Swal.fire({
+            title: 'Tem Certeza?',
+            text: "Esta ação não pode ser desfeita!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim, Deletar!'
+        }).then((result) => {
+            console.log(result)
+            if (result.isConfirmed) {
+                window.location.href = url
+                Swal.fire(
+                    'Deletado!',
+                    'O registro foi deletado!',
+                    'success'
+                )
+            }
+        })
+    }
+	</script>
   </body>
 </html>

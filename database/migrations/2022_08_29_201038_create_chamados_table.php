@@ -40,7 +40,9 @@ class CreateChamadosTable extends Migration
             $table->date('data_abertura');
             $table->date('data_fechamento');
             $table->string('colaborador', 100);
+            $table->text('obs');
         });
+        
     }
 
     /**
