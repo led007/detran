@@ -12,6 +12,6 @@
         <li><a class="app-menu__item {{ request()->is('/*') ? 'active' : '' }}" href="/"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         <li><a class="app-menu__item {{ request()->is('chamados*') ? 'active' : '' }}" href="/chamados"><i class="app-menu__icon fa-solid fa-ticket"></i><span class="app-menu__label">Registro de Chamados</span></a></li>
         <li><a class="app-menu__item {{ request()->is('usuarios*') ? 'active' : '' }}" href="/usuarios"><i class="app-menu__icon fa-solid fa-users"></i><span class="app-menu__label">Usuários</span></a></li>
-        <li><a class="app-menu__item {{ request()->is('usuarios*') ? 'active' : '' }}" href="/relatorios"><i class="app-menu__icon fa-solid fa-file-lines"></i><span class="app-menu__label">Relatórios</span></a></li>
+        <li><a class="app-menu__item {{ request()->is('relatorios*') ? 'active' : '' }}" href="/relatorios"><i class="app-menu__icon fa-solid fa-file-lines"></i><span class="app-menu__label">Relatórios</span></a></li>
       </ul>
     </aside>
