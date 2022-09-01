@@ -3,15 +3,19 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChamadosController;
 use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthController;
 
 
 
 
+//Auth::routes();
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::post('/logar', [AuthController::class, 'logar'])->name('logar');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/', function () {
-    return view('layout.index');
-    
-});
+
+Route::middleware(['auth'])->group(function () { 
 
 Route::get('/chamados', [ChamadosController::class, 'index'])->name('chamados');
 Route::get('/chamados/novo', [ChamadosController::class, 'novo'])->name('chamados.novo');
@@ -25,7 +29,9 @@ Route::post('/usuarios/salvar', [UsuariosController::class, 'salvar'])->name('us
 Route::get('/usuarios/editar/{id}', [UsuariosController::class, 'editar'])->name('usuarios.editar');
 Route::get('/usuarios/deletar/{id}', [UsuariosController::class, 'deletar'])->name('usuarios.deletar');
 
+Route::get('/', [HomeController::class, 'index']);
 
+});
 
 
 
