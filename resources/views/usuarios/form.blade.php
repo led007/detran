@@ -25,7 +25,7 @@
         <div class="col-md-12">
             <div class="tile">
                 <div class="row">
-                    <h2><i class="fa-solid fa-ticket" style="margin: 10px;"></i> {{ isset($usuario) ? 'Editar' : 'Novo' }} Usuário</h2>
+                    <h2><i class="fa-solid fa-users" style="margin: 10px;"></i> {{ isset($usuario) ? 'Editar' : 'Novo' }} Usuário</h2>
                     <div class="col" align="end">
                         @isset($usuario->id)
                         <a href="/usuarios/novo" class="btn btn-primary">
@@ -81,7 +81,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div class="card" style="width: 250px;">
+                            <div class="card" style="width: 300px;">
                                 @if(isset($usuario) && $usuario->foto != '')
                                 <img class="card-img-top" src="{{ $usuario->foto }}" alt="Imagem de capa do card">
                                 <div class="card-body">

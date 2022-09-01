@@ -38,9 +38,9 @@ class CreateChamadosTable extends Migration
             'Auditoria'
             ]);
             $table->date('data_abertura');
-            $table->date('data_fechamento');
+            $table->date('data_fechamento')->nullable();
             $table->string('colaborador', 100);
-            $table->text('obs');
+            $table->text('obs')->nullable();
         });
         
     }
